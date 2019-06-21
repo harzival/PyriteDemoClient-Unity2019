@@ -43,8 +43,8 @@
         {
             Debug.Log("Min: " + min);
             Debug.Log("Max: " + max);
-            _minPosition = min;
-            _maxPosition = max;
+            _minPosition = min + new Vector3 ( 13, 1.5F, 7.5F );
+            _maxPosition = max + new Vector3 ( 13, 1.5F, 7.5F );
         }
 
         private static float ClampAngle(float angle, float min, float max)

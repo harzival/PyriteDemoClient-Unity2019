@@ -5,11 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Demo/DemoMenuUpdate.unity
-  - enabled: 1
+    guid: 319b35c8e530412419c944057035c4f8
+  - enabled: 0
     path: Assets/Demo/Begard.unity
+    guid: ec199e96a05853248a55b93ead13e36f
   - enabled: 0
     path: Assets/Demo/Perth.unity
-  - enabled: 1
+    guid: 65b588428bf49aa4093086aacc1eaa47
+  - enabled: 0
     path: Assets/Demo/Nashville.unity
+    guid: d811cc84540449a4a8d51b3bd4eb7948
+  - enabled: 1
+    path: Assets/Scenes/Sample.unity
+    guid: a1b1544915f675148a44928a9b8a4905
+  m_configObjects: {}

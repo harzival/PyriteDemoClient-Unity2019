@@ -320,12 +320,12 @@ namespace Pyrite
         {
             if (!Processed) Process();
 
-            if (Vertices.Length > 65000)
-            {
-                Debug.LogErrorFormat("GameObject {0} had too many vertices", gameObject.name);
-            }
-
             var m = gameObject.GetComponent<MeshFilter>().mesh;
+            if ( Vertices.Length > 65000 )
+            {
+                Debug.LogWarningFormat ( "Mesh {0} has over 65000 vertices, setting index buffer to Int32!", gameObject.name );
+                m.indexFormat = UnityEngine.Rendering.IndexFormat.UInt32;
+            }
             m.vertices = Vertices;
             m.uv = UVs;
             m.triangles = Triangles;
